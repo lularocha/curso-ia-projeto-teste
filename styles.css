@@ -72,8 +72,11 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #750675;
     /* Gradiente multi-direcional com 3 cores puras */
-    background: 
+    /* background: 
         /* Gradiente linear diagonal (canto superior esquerdo para inferior direito) */
         linear-gradient(135deg, #ff0000 0%, transparent 50%),
         /* Gradiente linear horizontal (esquerda para direita) */
@@ -85,9 +88,8 @@ html {
         /* Base com gradiente radial para profundidade */
         radial-gradient(circle at 30% 30%, #ff0000 0%, transparent 40%),
         radial-gradient(circle at 70% 70%, #00ff00 0%, transparent 40%),
-        radial-gradient(circle at 50% 50%, #0000ff 0%, transparent 50%);
-    position: relative;
-    overflow: hidden;
+        radial-gradient(circle at 50% 50%, #0000ff 0%, transparent 50%); */
+
 }
 
 .hero::before {
