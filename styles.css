@@ -72,7 +72,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, var(--accent) 0%, #a855f7 100%);
+    background: #4c1d95;
     position: relative;
     overflow: hidden;
 }
