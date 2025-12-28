@@ -9,7 +9,7 @@
 
 :root {
     /* Cores Light Mode */
-    --bg-primary: #fafafa;
+    --bg-primary: #f0f0f0;
     --bg-secondary: #ffffff;
     --text-primary: #1a1a1a;
     --text-secondary: #666666;
@@ -490,8 +490,8 @@ footer {
     .back-to-top {
         bottom: 20px;
         right: 20px;
-        width: 40px; /* 20% menor que 50px */
-        height: 40px; /* 20% menor que 50px */
+        width: 40px; 
+        height: 40px; 
     }
 
     .back-to-top svg {
