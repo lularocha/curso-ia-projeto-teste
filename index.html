@@ -1,15 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nome Sobrenome - Designer</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Designer multidisciplinar especializado em identidade visual, design editorial e experiências digitais. Portfólio de projetos em branding, UI/UX, fotografia e motion design.">
+    <meta name="author" content="Nome Sobrenome">
+    <meta name="keywords"
+        content="designer, design gráfico, branding, UI/UX, webdesign, fotografia, editorial, ilustração, motion design, portfólio">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nome Sobrenome - Designer Multidisciplinar">
+    <meta property="og:description"
+        content="Designer multidisciplinar especializado em identidade visual, design editorial e experiências digitais.">
+    <meta property="og:url" content="https://nomesobrenome.design">
+    <meta property="og:image" content="https://nomesobrenome.design/og-image.jpg">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nome Sobrenome - Designer Multidisciplinar">
+    <meta name="twitter:description"
+        content="Designer multidisciplinar especializado em identidade visual, design editorial e experiências digitais.">
+    <meta name="twitter:image" content="https://nomesobrenome.design/og-image.jpg">
+
+    <!-- Mobile Optimization -->
+    <meta name="theme-color" content="#1e3a8a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://nomesobrenome.design">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <title>Nome Sobrenome - Designer Multidisciplinar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
     <!-- Botão Dark Mode -->
     <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
@@ -17,180 +56,206 @@
     </button>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <header class="hero">
         <div class="hero-content">
             <h1>Nome Sobrenome</h1>
             <h2>Designer Multidisciplinar</h2>
             <a href="#projetos" class="cta-button">Ver Projetos</a>
         </div>
-    </section>
+    </header>
 
-    <!-- Seção de Projetos -->
-    <section class="projects-section" id="projetos">
-        <div class="container">
-            <h2 class="section-title">Projetos Selecionados</h2>
-            
-            <!-- Filtros -->
-            <div class="filters">
-                <button class="filter-btn active" data-filter="todos">Todos</button>
-                <button class="filter-btn" data-filter="grafico">Design Gráfico</button>
-                <button class="filter-btn" data-filter="web">Webdesign</button>
-                <button class="filter-btn" data-filter="foto">Fotografia</button>
-                <button class="filter-btn" data-filter="editorial">Editorial</button>
-                <button class="filter-btn" data-filter="ilustra">Ilustração</button>
-                <button class="filter-btn" data-filter="motion">Motion Design</button>
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Seção de Projetos -->
+        <section class="projects-section" id="projetos">
+            <div class="container">
+                <h2 class="section-title">Projetos Selecionados</h2>
+
+                <!-- Filtros -->
+                <nav class="filters" aria-label="Filtros de projetos">
+                    <button class="filter-btn active" data-filter="todos">Todos</button>
+                    <button class="filter-btn" data-filter="grafico">Design Gráfico</button>
+                    <button class="filter-btn" data-filter="web">Webdesign</button>
+                    <button class="filter-btn" data-filter="foto">Fotografia</button>
+                    <button class="filter-btn" data-filter="editorial">Editorial</button>
+                    <button class="filter-btn" data-filter="ilustra">Ilustração</button>
+                    <button class="filter-btn" data-filter="motion">Motion Design</button>
+                </nav>
+
+                <!-- Grid de Projetos -->
+                <div class="projects-grid" id="projectsGrid">
+                    <!-- Projeto 1: Design Gráfico -->
+                    <article class="project-card" data-category="grafico">
+                        <div class="project-image-wrapper">
+                            <svg class="project-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"
+                                preserveAspectRatio="xMidYMid slice">
+                                <rect fill="#f59e0b" width="800" height="600" />
+                                <circle cx="400" cy="300" r="150" fill="#fff" opacity="0.2" />
+                                <text x="400" y="320" font-size="80" fill="#fff" text-anchor="middle"
+                                    font-weight="bold">Brand</text>
+                            </svg>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category cat-grafico">Design Gráfico</span>
+                            <h3 class="project-title">Identidade Visual Tech Startup</h3>
+                            <p class="project-description">Criação completa de marca para startup de tecnologia
+                                inovadora</p>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 2: Design Gráfico -->
+                    <article class="project-card" data-category="grafico">
+                        <div class="project-image-wrapper">
+                            <svg class="project-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"
+                                preserveAspectRatio="xMidYMid slice">
+                                <rect fill="#fbbf24" width="800" height="600" />
+                                <rect x="200" y="150" width="400" height="300" fill="#fff" opacity="0.3" rx="20" />
+                                <text x="400" y="320" font-size="60" fill="#fff" text-anchor="middle"
+                                    font-weight="bold">POSTER</text>
+                            </svg>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category cat-grafico">Design Gráfico</span>
+                            <h3 class="project-title">Campanha Festival de Música</h3>
+                            <p class="project-description">Sistema visual para evento com múltiplos pontos de contato
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 3: Webdesign -->
+                    <article class="project-card" data-category="web">
+                        <div class="project-image-wrapper">
+                            <svg class="project-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"
+                                preserveAspectRatio="xMidYMid slice">
+                                <rect fill="#3b82f6" width="800" height="600" />
+                                <rect x="100" y="100" width="600" height="400" fill="#fff" opacity="0.2" rx="10" />
+                                <rect x="120" y="120" width="560" height="60" fill="#fff" opacity="0.3" rx="5" />
+                                <text x="400" y="340" font-size="70" fill="#fff" text-anchor="middle"
+                                    font-weight="bold">WEB</text>
+                            </svg>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category cat-web">Webdesign</span>
+                            <h3 class="project-title">E-commerce de Moda Sustentável</h3>
+                            <p class="project-description">Interface moderna e intuitiva com foco em conversão</p>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 4: Fotografia -->
+                    <article class="project-card" data-category="foto">
+                        <div class="project-image-wrapper">
+                            <svg class="project-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"
+                                preserveAspectRatio="xMidYMid slice">
+                                <rect fill="#ec4899" width="800" height="600" />
+                                <circle cx="400" cy="300" r="120" fill="#fff" opacity="0.3" />
+                                <circle cx="400" cy="300" r="80" fill="#fff" opacity="0.5" />
+                                <text x="400" y="480" font-size="50" fill="#fff" text-anchor="middle"
+                                    font-weight="bold">PHOTO</text>
+                            </svg>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category cat-foto">Fotografia</span>
+                            <h3 class="project-title">Editorial Moda Urbana</h3>
+                            <p class="project-description">Ensaio fotográfico para revista de lifestyle contemporâneo
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 5: Editorial -->
+                    <article class="project-card" data-category="editorial">
+                        <div class="project-image-wrapper">
+                            <svg class="project-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"
+                                preserveAspectRatio="xMidYMid slice">
+                                <rect fill="#8b5cf6" width="800" height="600" />
+                                <rect x="250" y="150" width="300" height="300" fill="#fff" opacity="0.2" rx="5" />
+                                <line x1="280" y1="200" x2="520" y2="200" stroke="#fff" stroke-width="3"
+                                    opacity="0.4" />
+                                <line x1="280" y1="240" x2="520" y2="240" stroke="#fff" stroke-width="3"
+                                    opacity="0.4" />
+                                <line x1="280" y1="280" x2="520" y2="280" stroke="#fff" stroke-width="3"
+                                    opacity="0.4" />
+                                <text x="400" y="490" font-size="45" fill="#fff" text-anchor="middle"
+                                    font-weight="bold">EDITORIAL</text>
+                            </svg>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category cat-editorial">Editorial</span>
+                            <h3 class="project-title">Revista Arquitetura Contemporânea</h3>
+                            <p class="project-description">Diagramação e direção de arte para publicação trimestral</p>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 6: Ilustração -->
+                    <article class="project-card" data-category="ilustra">
+                        <div class="project-image-wrapper">
+                            <svg class="project-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"
+                                preserveAspectRatio="xMidYMid slice">
+                                <rect fill="#10b981" width="800" height="600" />
+                                <path d="M 300 200 Q 400 100 500 200 T 700 200" stroke="#fff" stroke-width="8"
+                                    fill="none" opacity="0.4" />
+                                <circle cx="350" cy="350" r="60" fill="#fff" opacity="0.3" />
+                                <circle cx="500" cy="320" r="80" fill="#fff" opacity="0.3" />
+                                <text x="400" y="500" font-size="55" fill="#fff" text-anchor="middle"
+                                    font-weight="bold">ILUSTRA</text>
+                            </svg>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category cat-ilustra">Ilustração</span>
+                            <h3 class="project-title">Série de Ilustrações Botânicas</h3>
+                            <p class="project-description">Coleção digital de ilustrações para projeto educacional</p>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 7: Motion Design -->
+                    <article class="project-card" data-category="motion">
+                        <div class="project-image-wrapper">
+                            <svg class="project-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"
+                                preserveAspectRatio="xMidYMid slice">
+                                <rect fill="#f43f5e" width="800" height="600" />
+                                <polygon points="300,250 300,350 450,300" fill="#fff" opacity="0.3" />
+                                <circle cx="400" cy="300" r="100" stroke="#fff" stroke-width="5" fill="none"
+                                    opacity="0.4" />
+                                <circle cx="400" cy="300" r="130" stroke="#fff" stroke-width="3" fill="none"
+                                    opacity="0.3" />
+                                <text x="400" y="480" font-size="50" fill="#fff" text-anchor="middle"
+                                    font-weight="bold">MOTION</text>
+                            </svg>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category cat-motion">Motion Design</span>
+                            <h3 class="project-title">Animação Institucional Tech Corp</h3>
+                            <p class="project-description">Motion graphics para vídeo corporativo de 60 segundos</p>
+                        </div>
+                    </article>
+                </div>
             </div>
+        </section>
 
-            <!-- Grid de Projetos -->
-            <div class="projects-grid" id="projectsGrid">
-                <!-- Projeto 1: Design Gráfico -->
-                <div class="project-card" data-category="grafico">
-                    <div class="project-image-wrapper">
-                        <svg class="project-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
-                            <rect fill="#f59e0b" width="800" height="600"/>
-                            <circle cx="400" cy="300" r="150" fill="#fff" opacity="0.2"/>
-                            <text x="400" y="320" font-size="80" fill="#fff" text-anchor="middle" font-weight="bold">Brand</text>
-                        </svg>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-category cat-grafico">Design Gráfico</span>
-                        <h3 class="project-title">Identidade Visual Tech Startup</h3>
-                        <p class="project-description">Criação completa de marca para startup de tecnologia inovadora</p>
-                    </div>
-                </div>
+        <!-- Seção Sobre -->
+        <section class="about-section" id="sobre">
+            <div class="container">
+                <div class="about-content">
+                    <h2 class="section-title">Sobre Mim</h2>
+                    <p class="about-text">
+                        Designer multidisciplinar com mais de 30 anos de experiência criando soluções visuais
+                        que conectam marcas e pessoas. Especializado em identidade visual, design editorial
+                        e experiências digitais que encantam e convertem.
+                    </p>
 
-                <!-- Projeto 2: Design Gráfico -->
-                <div class="project-card" data-category="grafico">
-                    <div class="project-image-wrapper">
-                        <svg class="project-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
-                            <rect fill="#fbbf24" width="800" height="600"/>
-                            <rect x="200" y="150" width="400" height="300" fill="#fff" opacity="0.3" rx="20"/>
-                            <text x="400" y="320" font-size="60" fill="#fff" text-anchor="middle" font-weight="bold">POSTER</text>
-                        </svg>
+                    <div class="skills-grid">
+                        <div class="skill-item">Branding</div>
+                        <div class="skill-item">UI/UX Design</div>
+                        <div class="skill-item">Fotografia</div>
+                        <div class="skill-item">Editorial</div>
+                        <div class="skill-item">Ilustração</div>
+                        <div class="skill-item">Motion Design</div>
                     </div>
-                    <div class="project-info">
-                        <span class="project-category cat-grafico">Design Gráfico</span>
-                        <h3 class="project-title">Campanha Festival de Música</h3>
-                        <p class="project-description">Sistema visual para evento com múltiplos pontos de contato</p>
-                    </div>
-                </div>
 
-                <!-- Projeto 3: Webdesign -->
-                <div class="project-card" data-category="web">
-                    <div class="project-image-wrapper">
-                        <svg class="project-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
-                            <rect fill="#3b82f6" width="800" height="600"/>
-                            <rect x="100" y="100" width="600" height="400" fill="#fff" opacity="0.2" rx="10"/>
-                            <rect x="120" y="120" width="560" height="60" fill="#fff" opacity="0.3" rx="5"/>
-                            <text x="400" y="340" font-size="70" fill="#fff" text-anchor="middle" font-weight="bold">WEB</text>
-                        </svg>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-category cat-web">Webdesign</span>
-                        <h3 class="project-title">E-commerce de Moda Sustentável</h3>
-                        <p class="project-description">Interface moderna e intuitiva com foco em conversão</p>
-                    </div>
-                </div>
-
-                <!-- Projeto 4: Fotografia -->
-                <div class="project-card" data-category="foto">
-                    <div class="project-image-wrapper">
-                        <svg class="project-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
-                            <rect fill="#ec4899" width="800" height="600"/>
-                            <circle cx="400" cy="300" r="120" fill="#fff" opacity="0.3"/>
-                            <circle cx="400" cy="300" r="80" fill="#fff" opacity="0.5"/>
-                            <text x="400" y="480" font-size="50" fill="#fff" text-anchor="middle" font-weight="bold">PHOTO</text>
-                        </svg>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-category cat-foto">Fotografia</span>
-                        <h3 class="project-title">Editorial Moda Urbana</h3>
-                        <p class="project-description">Ensaio fotográfico para revista de lifestyle contemporâneo</p>
-                    </div>
-                </div>
-
-                <!-- Projeto 5: Editorial -->
-                <div class="project-card" data-category="editorial">
-                    <div class="project-image-wrapper">
-                        <svg class="project-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
-                            <rect fill="#8b5cf6" width="800" height="600"/>
-                            <rect x="250" y="150" width="300" height="300" fill="#fff" opacity="0.2" rx="5"/>
-                            <line x1="280" y1="200" x2="520" y2="200" stroke="#fff" stroke-width="3" opacity="0.4"/>
-                            <line x1="280" y1="240" x2="520" y2="240" stroke="#fff" stroke-width="3" opacity="0.4"/>
-                            <line x1="280" y1="280" x2="520" y2="280" stroke="#fff" stroke-width="3" opacity="0.4"/>
-                            <text x="400" y="490" font-size="45" fill="#fff" text-anchor="middle" font-weight="bold">EDITORIAL</text>
-                        </svg>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-category cat-editorial">Editorial</span>
-                        <h3 class="project-title">Revista Arquitetura Contemporânea</h3>
-                        <p class="project-description">Diagramação e direção de arte para publicação trimestral</p>
-                    </div>
-                </div>
-
-                <!-- Projeto 6: Ilustração -->
-                <div class="project-card" data-category="ilustra">
-                    <div class="project-image-wrapper">
-                        <svg class="project-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
-                            <rect fill="#10b981" width="800" height="600"/>
-                            <path d="M 300 200 Q 400 100 500 200 T 700 200" stroke="#fff" stroke-width="8" fill="none" opacity="0.4"/>
-                            <circle cx="350" cy="350" r="60" fill="#fff" opacity="0.3"/>
-                            <circle cx="500" cy="320" r="80" fill="#fff" opacity="0.3"/>
-                            <text x="400" y="500" font-size="55" fill="#fff" text-anchor="middle" font-weight="bold">ILUSTRA</text>
-                        </svg>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-category cat-ilustra">Ilustração</span>
-                        <h3 class="project-title">Série de Ilustrações Botânicas</h3>
-                        <p class="project-description">Coleção digital de ilustrações para projeto educacional</p>
-                    </div>
-                </div>
-
-                <!-- Projeto 7: Motion Design -->
-                <div class="project-card" data-category="motion">
-                    <div class="project-image-wrapper">
-                        <svg class="project-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
-                            <rect fill="#f43f5e" width="800" height="600"/>
-                            <polygon points="300,250 300,350 450,300" fill="#fff" opacity="0.3"/>
-                            <circle cx="400" cy="300" r="100" stroke="#fff" stroke-width="5" fill="none" opacity="0.4"/>
-                            <circle cx="400" cy="300" r="130" stroke="#fff" stroke-width="3" fill="none" opacity="0.3"/>
-                            <text x="400" y="480" font-size="50" fill="#fff" text-anchor="middle" font-weight="bold">MOTION</text>
-                        </svg>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-category cat-motion">Motion Design</span>
-                        <h3 class="project-title">Animação Institucional Tech Corp</h3>
-                        <p class="project-description">Motion graphics para vídeo corporativo de 60 segundos</p>
-                    </div>
+                    <a href="mailto:contato@nomesobrenome.design" class="contact-link">Vamos Conversar</a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Seção Sobre -->
-    <section class="about-section" id="sobre">
-        <div class="container">
-            <div class="about-content">
-                <h2 class="section-title">Sobre Mim</h2>
-                <p class="about-text">
-                    Designer multidisciplinar com mais de 30 anos de experiência criando soluções visuais 
-                    que conectam marcas e pessoas. Especializado em identidade visual, design editorial 
-                    e experiências digitais que encantam e convertem.
-                </p>
-
-                <div class="skills-grid">
-                    <div class="skill-item">Branding</div>
-                    <div class="skill-item">UI/UX Design</div>
-                    <div class="skill-item">Fotografia</div>
-                    <div class="skill-item">Editorial</div>
-                    <div class="skill-item">Ilustração</div>
-                    <div class="skill-item">Motion Design</div>
-                </div>
-
-                <a href="mailto:contato@nomesobrenome.design" class="contact-link">Vamos Conversar</a>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
@@ -205,4 +270,5 @@
         </div>
     </footer>
 </body>
+
 </html>
